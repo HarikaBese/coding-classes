@@ -1,0 +1,30 @@
+class EnOprint
+{
+public static void main(String args[])
+{
+int n=1234406,r,i=0,j=0;
+int a[]=new int[25];
+int b[]=new int[25];
+while(n>0)
+{
+r=n%10;
+if(r%2==0)
+{
+a[i]=r;
+i++;
+}
+else
+{
+b[j]=r;
+j++;
+}
+
+n=n/10;
+}
+for(int k=0;k<i;k++)
+System.out.print(a[k]+" ");
+System.out.println();
+for(int k=0;k<j;k++)
+System.out.println(b[k]+"");
+}
+}
